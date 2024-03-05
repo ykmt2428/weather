@@ -1,0 +1,34 @@
+@use './mq' as * ;
+.o-flex_full {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.o-flex_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.o-flex {
+  display: flex;
+  align-items: center;
+}
+.o-flex_full__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@include mq(mm) {
+  .o-flex_full {
+    flex-direction: column;
+    align-items: left;
+  }
+}
+@include mq(md) {
+  .o-flex_full__wrap {
+    flex-direction: column;
+  }
+}
+

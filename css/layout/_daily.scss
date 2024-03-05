@@ -1,0 +1,49 @@
+.daily {
+  max-width: 380px;
+  margin: 0 auto;
+    background-color: rgba(16,64,132,0.3);
+    padding: 16px 24px;
+    border-radius: 20px;
+  &_title {
+    font-size: 16px;
+  } 
+  p {
+    margin-bottom: 8px;
+  }
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &_content {
+    margin: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+  }
+  &_tempContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    width: 40%;
+    p {
+      margin: 0px 4px;
+    }
+  }
+  &_time {
+    width: 10%;
+  }
+  &_maxTemp {
+    color: #FF001F;
+  }
+  &_minTemp {
+    color: rgb(0, 171, 255);
+  }
+  &_weather {
+    max-width: 60px;
+  }
+}

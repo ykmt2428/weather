@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://openweathermap.org/img/wn/10d@2x.png">
+  <link rel="stylesheet" href="css/app.scss">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Document</title>
+</head>
+<body id="body">
+  <div class="container">
+    <section class="current">
+      <div class="current_container">
+        <img class="current_Weather" src="">
+        <p id="city">Tokyo</p>
+        <p class="current_temp"></p>
+        <div class="current_tempContent">
+          <p class="current_MaxTemp"></p>
+          <span>/</span>
+          <p class="current_MinTemp"></p>
+        </div>
+        <div class="current_components">
+          <div class="current_component">
+            <img src="image/othericon/humidity.png">
+            <span class="current_humidity"></span>
+          </div>
+          <div class="current_component">
+            <img src="image/othericon/rainfall.png">
+            <span class="current_rain"></span>
+          </div>
+          <div class="current_component">
+            <img src="image/othericon/windspeed.png">
+            <span class="current_windSpeed"></span>
+          </div>
+        </div>
+        </div>
+    </section>
+    <section class="hourly">
+      <div class="hourly_headingContent">
+        <p class="hourly_title">３時間ごとの天気</p>
+        <p class="hourly_date"></p>
+      </div>
+      <div class="hourly_container">
+        <div class="hourly_content">
+          <p class="hourly_time"></p>
+          <img class="hourly_weather"/>
+          <p class="hourly_temp"></p>
+        </div>
+        <div class="hourly_content">
+          <p class="hourly_time"></p>
+          <img class="hourly_weather"/>
+          <p class="hourly_temp"></p>
+        </div>
+        <div class="hourly_content">
+          <p class="hourly_time"></p>
+          <img class="hourly_weather"/>
+          <p class="hourly_temp"></p>
+        </div>
+        <div class="hourly_content">
+          <p class="hourly_time"></p>
+          <img class="hourly_weather"/>
+          <p class="hourly_temp"></p>
+        </div>
+      </div>
+    </section>
+    <section class="daily">
+      <p class="daily_title">週間天気</p>
+      <div class="daily_container">
+        <div class="daily_content">
+          <p class="daily_time"></p>
+          <img class="daily_weather"/>
+          <div class="daily_tempContent">
+            <p class="daily_maxTemp"></p>
+            <span>/</span>
+            <p class="daily_minTemp"></p>
+          </div>
+        </div>
+        <div class="daily_content">
+          <p class="daily_time"></p>
+          <img class="daily_weather"/>
+          <div class="daily_tempContent">
+            <p class="daily_maxTemp"></p>
+            <span>/</span>
+            <p class="daily_minTemp"></p>
+          </div>
+        </div>
+        <div class="daily_content">
+          <p class="daily_time"></p>
+          <img class="daily_weather"/>
+          <div class="daily_tempContent">
+            <p class="daily_maxTemp"></p>
+            <span>/</span>
+            <p class="daily_minTemp"></p>
+          </div>
+        </div>
+        <div class="daily_content">
+          <p class="daily_time"></p>
+          <img class="daily_weather"/>
+          <div class="daily_tempContent">
+            <p class="daily_maxTemp"></p>
+            <span>/</span>
+            <p class="daily_minTemp"></p>
+          </div>
+        </div>
+        <div class="daily_content">
+          <p class="daily_time"></p>
+          <img class="daily_weather"/>
+          <div class="daily_tempContent">
+            <p class="daily_maxTemp"></p>
+            <span>/</span>
+            <p class="daily_minTemp"></p>
+          </div>
+        </div>
+        <div class="daily_content">
+          <p class="daily_time"></p>
+          <img class="daily_weather"/>
+          <div class="daily_tempContent">
+            <p class="daily_maxTemp"></p>
+            <span>/</span>
+            <p class="daily_minTemp"></p>
+          </div>
+        </div>
+        <div class="daily_content">
+          <p class="daily_time"></p>
+          <img class="daily_weather"/>
+          <div class="daily_tempContent">
+            <p class="daily_maxTemp"></p>
+            <span>/</span>
+            <p class="daily_minTemp"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="load_container">
+    <p class="load_btn">
+      <button>天気情報を取得中</button>
+    </p>
+  </div>
+  <script src="js/todayWeather.js"></script>
+  <script src="js/HourlyWeather.js"></script>
+  <script src="js/weekWeather.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

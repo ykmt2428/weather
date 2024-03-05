@@ -1,0 +1,48 @@
+.current {
+  max-width: 380px;
+  margin: 0 auto 40px;
+  &_tempContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    p {
+      margin: 0 8px;
+    }
+  }
+  &_components {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(16,64,132,0.3);
+    padding: 16px 24px;
+    border-radius: 20px;
+  }
+  &_components {
+    img {
+      width: 24px;
+    }
+  }
+  &_tempContent {
+    width: 80px;
+    margin: 8px auto;
+  }
+  &_MaxTemp {
+    color: #FF001F;
+  }
+  &_MinTemp {
+    color: #0029ff;
+  }
+  &_Weather {
+    width: 240px;
+  }
+  &_temp {
+    margin-bottom: 8px;
+    font-size: 30px;
+    transform: translateY(-80%);
+  }
+}
+#city {
+  font-size: 36px;
+  transform: translateY(-80%);
+}
