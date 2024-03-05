@@ -38,12 +38,12 @@ const checkCurrentWeatherCode = (weather) => {
     case 1:
     case 2:
     case 3:
-      currentWeather.setAttribute("src","/image/mainicon/mainicon_sun.png");
+      currentWeather.setAttribute("src","image/mainicon/mainicon_sun.png");
     break;
 
     case 45:
     case 48:
-      currentWeather.setAttribute("src","/image/mainicon/cloud_icon.png");
+      currentWeather.setAttribute("src","image/mainicon/cloud_icon.png");
     break;
 
     case 51:
@@ -56,7 +56,7 @@ const checkCurrentWeatherCode = (weather) => {
     case 65:
     case 66:
     case 67:
-      currentWeather.setAttribute("src","/image/mainicon/mainicon_heavyrain.png");
+      currentWeather.setAttribute("src","image/mainicon/mainicon_heavyrain.png");
     break;
 
     case 71:
@@ -68,17 +68,17 @@ const checkCurrentWeatherCode = (weather) => {
     case 82:
     case 85:
     case 86:
-      currentWeather.setAttribute("src","/image/mainicon/mainicon_snow.png");
+      currentWeather.setAttribute("src","image/mainicon/mainicon_snow.png");
     break; 
 
     case 95:
     case 96:
     case 99:
-      currentWeather.setAttribute("src","/image/mainicon/mainicon_thunder.png");
+      currentWeather.setAttribute("src","image/mainicon/mainicon_thunder.png");
     break;
 
     default:
-      currentWeather.setAttribute("src","/image/mainicon/mainicon_sun.png");
+      currentWeather.setAttribute("src","image/mainicon/mainicon_sun.png");
     break;
   }
 }
