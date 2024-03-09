@@ -1,14 +1,3 @@
-const hourlyWeatherApi = ()=> {
-  const  hourlyWeatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=35.6785&longitude=139.6823&hourly=temperature_2m,weather_code&timezone=Asia%2FTokyo`;
-  fetch(hourlyWeatherUrl) 
-  .then ((response) => {
-    return response.json();
-  })
-  .then ((hourlyWeather) => {
-    createHourlyTime(hourlyWeather);
-  });
-}
-
 const getCurrentTime = () => {
   const  date = new Date ();
   const hourly = date.getHours();
@@ -49,6 +38,9 @@ const checkHourlyWeatherCode = (el,code) => {
     case 65:
     case 66:
     case 67:
+    case 80:
+    case 81:
+    case 82:
       weatherRain(el);
     break;
 
@@ -56,9 +48,6 @@ const checkHourlyWeatherCode = (el,code) => {
     case 73:
     case 75:
     case 77:
-    case 80:
-    case 81:
-    case 82:
     case 85:
     case 86:
       weatherSnow(el);
