@@ -1,16 +1,3 @@
-const weekWeatherApi = () => {
-  const weekWeatherUrl = "https://api.open-meteo.com/v1/forecast?latitude=35.6785&longitude=139.6823&hourly=vapour_pressure_deficit&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max,precipitation_hours&timezone=Asia%2FTokyo";
-
-  fetch(weekWeatherUrl) 
-  .then ((response) => {
-    return response.json();
-  })
-  .then ((weekWeather) => {
-  createWeekWeather(weekWeather);
-  createWeekDate(".daily_time",weekWeather,"daily");
-  });
-}
-
 const createWeekWeather = (Weather) => {
   createText(".current_MaxTemp",Weather,"daily","temperature_2m_max",);
   createText(".current_MinTemp",Weather,"daily","temperature_2m_min",);  
