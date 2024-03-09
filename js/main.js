@@ -32,6 +32,9 @@ const weatherApi = () => {
 
 const addClass = () => {
   const loadContent = document.querySelector('.load_container');
+  if(loadContent.classList.contains("none")) {
+    return ;
+  }
   loadContent.classList.add("none");
 }
 
@@ -74,7 +77,4 @@ const weatherThunder = (el) => {
 }
 
 weatherApi();
-setInterval (currentWeatherApi,900000);
-setInterval (weekWeatherApi,900000);
-setInterval (hourlyWeatherApi,900000);
-
+setInterval (weatherApi,900000);
