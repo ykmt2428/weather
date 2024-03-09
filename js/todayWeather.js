@@ -1,16 +1,3 @@
-const currentWeatherApi = ()=> {
-  const todayWeatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=35.6785&longitude=139.6823&current=temperature_2m,relative_humidity_2m,is_day,weather_code,wind_speed_10m,rain,wind_direction_10m&timezone=Asia%2FTokyo`;
-
-  fetch(todayWeatherUrl) 
-  .then ((response) => {
-    return response.json();
-  })
-  .then ((todayWeather) => {
-    createTodayWeather(todayWeather);
-    console.log(todayWeather)
-  });
-} 
-
 const createTodayWeather = (Weather) => {
   createText(".current_humidity",Weather,"current","relative_humidity_2m");
   createText(".current_temp",Weather,"current","temperature_2m");  
@@ -56,6 +43,9 @@ const checkCurrentWeatherCode = (weather) => {
     case 65:
     case 66:
     case 67:
+    case 80:
+    case 81:
+    case 82:
       currentWeather.setAttribute("src","image/mainicon/mainicon_heavyrain.png");
     break;
 
@@ -63,9 +53,6 @@ const checkCurrentWeatherCode = (weather) => {
     case 73:
     case 75:
     case 77:
-    case 80:
-    case 81:
-    case 82:
     case 85:
     case 86:
       currentWeather.setAttribute("src","image/mainicon/mainicon_snow.png");
